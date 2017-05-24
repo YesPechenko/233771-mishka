@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Фигурова](https://up.htmlacademy.ru/adaptive/11/user/233771).
-* Наставник: Артём Иванец.
+* Наставник: 'Артём Иванец'.
 
 ---
 
