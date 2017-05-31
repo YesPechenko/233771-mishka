@@ -6,12 +6,13 @@
 </head>
 <body>
 
+
 <header class="page-header">
 
   <h1 class="page-header__title">Мишка</h1>
 
   <div class="page-header__logo">
-    <img src="#" alt="Мишка">
+    <a><img src="#" alt="Мишка"></a>
   </div>
 
   <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню -->
@@ -45,46 +46,161 @@
 
 </header>
 
-Вязание на заказ
+<main class="order">
 
-Мы будем рады выполнить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+  <div class="order__title">
 
-Тип
+    <h2>Вязание на заказ</h2>
+  </div>
 
-Аксесуар для интерьера
+  <div class="order__request">
 
-Детская игрушка
+    <p>Мы будем рады выполнить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  </div>
 
-Цвет
+  <section class="order__wrapper">
 
-Белый
-Серый
-"Тиффани"
-Черный
-розовый
-Оранжевый
+    <form class="order__form" action="search" method="post">
 
-ФИО
-Имя:
-Фамилия:
-Отчество:
+    <div class="order__internal internal__type">
 
-Тел
+      <span class="type__title">Тип</span>
 
-E-Mail
+      <input id="accessory" name="question-one" type="radio">
+      <label for="accessory">Аксесуар для интерьера</label>
 
-Доп
+      <input id="toy" name="question-one" type="radio">
+      <label for="toy">Детская игрушка</label>
 
-*Поля обязательны для заполнения
+    </div>
 
-Отправить заказ
+    <div class="order__internal internal__colour">
 
-инстраграмм
-фейсбук
-твитер
+      <span class="colour__title">Цвет</span>
 
-Разработано
-HTML Academy
+      <input id="white" name="filler" type="checkbox" value="chocolate">
+      <label for="white">Белый</label>
 
+      <input id="gray" name="filler" type="checkbox" value="chocolate">
+      <label for="gray">Серый</label>
+
+      <input id="tiffany" name="filler" type="checkbox" value="chocolate">
+      <label for="tiffany">«Тиффани»</label>
+
+      <input id="black" name="filler" type="checkbox" value="chocolate">
+      <label for="black">Черный</label>
+
+      <input id="pink" name="filler" type="checkbox" value="chocolate">
+      <label for="pink">розовый</label>
+
+      <input id="orange" name="filler" type="checkbox" value="chocolate">
+      <label for="orange">Оранжевый</label>
+
+    </div>
+
+    <div class="order__internal internal__full-name">
+
+      <span class="full-name__title">ФИО</span>
+
+      <label class="full-name__name" for="name">Имя:</label>
+      <input type="text" id="name" tabindex="1" placeholder="Введите ваше имя*" required>
+
+      <label class="full-name__name" for="surname">Фамилия:</label>
+      <input type="text" id="surname" tabindex="2" placeholder="Укажите фамилию*" required>
+
+      <label class="full-name__name" for="patronymic">Отчество:</label>
+      <input type="text" id="patronymic" tabindex="3" placeholder="Отчество, если желаете" required>
+
+    </div>
+
+    <div class="order__internal internal__tel">
+
+      <span class="tel__title">Тел</span>
+
+      <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" tabindex="4" placeholder="+7 ХХХ ХХ ХХ*" required>
+
+    </div>
+
+    <div class="order__internal internal__email">
+
+      <span class="email__title">E-Mail</span>
+
+      <input type="email" tabindex="5" placeholder="Ваш Email*" required>
+
+    </div>
+
+    <div class="order__internal internal__additionally">
+
+      <span class="additionally__title">Доп</span>
+
+      <input type="text" tabindex="6" placeholder="Опишите все ваши пожелания к заказу">
+
+    </div>
+
+    <span class="order__required-fields">*Поля обязательны для заполнения</span>
+
+    <input type="button" value="Отправить заказ">
+
+    </form>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="page‐footer">
+
+  <div class="page‐footer__wrapper">
+
+    <h3 class="page‐footer__title">контакты</h3>
+
+    <div class="page‐footer__contacts">
+
+      <span class="page‐footer__contacts page‐footer__contacts--mail"> e-mail: </span>
+
+      <span class="page‐footer__contacts page‐footer__contacts--info">info@mimimishkashop.ru</span>
+
+      <span class="page‐footer__contacts page‐footer__contacts--address">адрес:</span>
+
+      <span class="page‐footer__contacts page‐footer__contacts--address-mail">г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101</span>
+
+    </div>
+  </div>
+
+  <!-- Карту не знаю как вставить-->
+
+  <p class="page‐footer__social">
+
+        <span class="social‐links">
+
+          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+
+        </span>
+  </p>
+
+  <p class="page‐footer__copyright">
+
+    <a class="btn btn‐‐invert page‐footer__copyright‐link" href="#">Разработано</a>
+
+  </p>
+
+  <img src="#" width="370" height="153" alt="HTML Academy">
+
+</footer>
 </body>
 </html>
