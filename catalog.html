@@ -11,7 +11,7 @@
     <h1 class="page-header__title">Мишка</h1>
 
     <div class="page-header__logo">
-      <img src="#" alt="Мишка">
+      <a><img src="#" alt="Мишка"></a>
     </div>
 
     <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню -->
@@ -45,41 +45,117 @@
 
   </header>
 
-Каталог товаров
+  <main class="catalog">
 
-Зайчик-попрыгайчик
+    <div class="catalog__title">
 
-Рост 30см, вес 200г
+      <h2>Каталог товаров</h2>
+    </div>
 
-1 200 руб.
+    <section class="catalog__wrapper">
 
-корзина
+      <div class="catalog__internal">
 
-Корзина для белья
+        <img src="#" alt="Зайчик-попрыгайчик">
 
-Диаметр 15 см, высота 10 см
-690 руб.
+        <span class="catalog__internal catalog__internal--title">Зайчик-попрыгайчик</span>
+        <span class="catalog__internal catalog__internal--data">Рост 30см, вес 200г</span>
+        <span class="catalog__internal catalog__internal--value">1 200 руб.</span>
 
-корзина
+        <a class="catalog__internal catalog__internal--basket" href="#">корзина</a>
 
-Большая корзина для игрушек
+      </div>
 
-диаметр 30 см, высота 30 см
-1 500 руб.
-корзина
+      <div class="catalog__internal">
 
-Процесс производства
+        <img src="#" alt="Корзина для белья">
 
-По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        <span class="catalog__internal catalog__internal--title">Корзина для белья</span>
+        <span class="catalog__internal catalog__internal--data">Диаметр 15 см, высота 10 см</span>
+        <span class="catalog__internal catalog__internal--value">690 руб.</span>
 
-сделать заказ
+        <a class="catalog__internal catalog__internal--basket" href="#">корзина</a>
 
-  инстраграмм
-  фейсбук
-  твитер
+      </div>
 
-  Разработано
-  HTML Academy
+      <div class="catalog__internal">
+
+        <img src="#" alt="Большая корзина для игрушек">
+
+        <span class="catalog__internal catalog__internal--title">Большая корзина для игрушек</span>
+        <span class="catalog__internal catalog__internal--data">диаметр 30 см, высота 30 см</span>
+        <span class="catalog__internal catalog__internal--value">1 500 руб.</span>
+
+        <a class="catalog__internal catalog__internal--basket" href="#">корзина</a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <section class="video-process">
+
+    <div class="video-process__title">Процесс производства</div>
+
+    <video controls preload="metadata" >
+
+      <source src="#" type="video/mp4">
+      <source src="#" type="video/ogg">
+      <source src="#" type="video/webm">
+
+    </video>
+
+    <b class="video-process__clarification">
+      По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+    </b>
+
+    <a class="video-process__order" href="#">сделать заказ</a>
+
+  </section>
+
+  <footer class="page‐footer">
+
+    <div class="page‐footer__wrapper">
+
+      <h3 class="page‐footer__title">контакты</h3>
+
+      <div class="page‐footer__contacts">
+
+        <span class="page‐footer__contacts page‐footer__contacts--mail"> e-mail: </span>
+
+        <span class="page‐footer__contacts page‐footer__contacts--info">info@mimimishkashop.ru</span>
+
+        <span class="page‐footer__contacts page‐footer__contacts--address">адрес:</span>
+
+        <span class="page‐footer__contacts page‐footer__contacts--address-mail">г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101</span>
+
+      </div>
+    </div>
+
+    <!-- Карту не знаю как вставить-->
+
+    <p class="page‐footer__social">
+
+        <span class="social‐links">
+
+          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+
+        </span>
+    </p>
+
+    <p class="page‐footer__copyright">
+
+      <a class="btn btn‐‐invert page‐footer__copyright‐link" href="#">Разработано</a>
+
+    </p>
+
+    <img src="#" width="370" height="153" alt="HTML Academy">
+
+  </footer>
+
 
 </body>
 </html>
