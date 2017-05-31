@@ -55,12 +55,12 @@
 
         <li class="subject__list-item">
           <span class="subject__item-name">Предметы интерьера</span>
-          <span class="subject__item-icon--one"></span>
+          <span class="subject__list-item subject__item-icon--one"></span>
         </li>
 
         <li class="subject__list-item">
           <span class="subject__item-name">Детские игрушка</span>
-          <span class="subject__item-icon--two"></span>
+          <span class="subject__list-item subject__item-icon--two"></span>
         </li>
 
       </ul>
@@ -81,11 +81,11 @@
           <td>Цвет:</td>
           <td>«Тиффани»/серый</td>
         </tr>
-            <tr class="property_diameter">
+            <tr class="property__diameter">
               <td>Диаметр:</td>
               <td>25 см</td>
             </tr>
-                <tr class="property_height">
+                <tr class="property__height">
                   <td>Высота:</td>
                   <td>15 см</td>
                 </tr>
@@ -94,7 +94,12 @@
 
     <span class="product-week__price">Цена: 990 руб.</span>
 
-    Заказать
+    <p class="page‐header_order">
+
+      <a class="btn btn‐‐invert page‐header__order‐link" href="#">Заказать</a>
+
+    </p>
+
 
   </section>
 
@@ -133,44 +138,82 @@
 
   </section>
 
-  <section class="review">
+  <section class="reviews">
 
-    <div class="review-wrapper slider">
+    <div class="reviews__wrapper">
 
-      <h2 class="review-title">Отзывы</h2>/
+      <h2 class="reviews__title ">Отзывы</h2>
 
-      Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!
+      <div class="reviews__slider‐wrapper slider">
 
-      Анастасия Красильникова
+        <div class="reviews__list‐wrapper slider__wrapper">
 
-      @misssssiskrss
+          <div class="reviews__list slider__inner">
 
-      написать
+            <blockquote class="reviews__item slider__item">
 
-      контакты
+              <p class="reviews__item‐descr"> Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!</p>
 
-      e-mail: info@mimimishkashop.ru
+               <cite class="reviews__auhor‐name">Анастасия Красильникова</cite>
 
-      адрес:
+                <span class="reviews__auhor‐mail">@misssssiskrss</span>
 
-      г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101
+            </blockquote>
 
-      карта
+          </div>
+        </div>
 
-      напишите нам
-
-      инстраграмм
-      фейсбук
-      твитер
-
-      Разработано
-      HTML Academy
-      <div class="">
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
 
       </div>
     </div>
 
+    <a class="news__more btn" href="">написать</a>
+
   </section>
+
+    <footer class="page‐footer">
+
+      <div class="page‐footer__wrapper">
+
+        <h3 class="page‐footer__title">контакты</h3>
+
+        <div class="page‐footer__contacts">
+
+          <span class="page‐footer__contacts page‐footer__contacts--mail"> e-mail: </span>
+
+          <span class="page‐footer__contacts page‐footer__contacts--info">info@mimimishkashop.ru</span>
+
+          <span class="page‐footer__contacts page‐footer__contacts--address">адрес:</span>
+
+          <span class="page‐footer__contacts page‐footer__contacts--address-mail">г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101</span>
+
+        </div>
+      </div>
+
+        <!-- Карту не знаю как вставить-->
+
+        <p class="page‐footer__social">
+
+        <span class="social‐links">
+
+          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+
+        </span>
+        </p>
+
+        <p class="page‐footer__copyright">
+
+          <a class="btn btn‐‐invert page‐footer__copyright‐link" href="#">Разработано</a>
+
+        </p>
+
+        <img src="#" width="370" height="153" alt="HTML Academy">
+
+    </footer>
 
   </body>
 </html>
