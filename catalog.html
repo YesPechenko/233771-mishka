@@ -1,161 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
 </head>
 <body>
-
   <header class="page-header">
-
-    <h1 class="page-header__title">Мишка</h1>
-
+    <p class="page-header__title">Мишка</p>
     <div class="page-header__logo">
-      <a><img src="#" alt="Мишка"></a>
+      <a class="page-header__logo--icon  href="#> <img src="#" alt="Мишка"></a>
     </div>
-
     <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню -->
       <span class="main-nav__toggler"></span>
-
       <div class="main-nav__wrapper">
-
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav--active"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="#"></a></li>
-          <li class="main-nav__item"><a href="#"></a></li>
-          <li class="main-nav__item"><a href="#"></a></li>
+          <li><a class="main-nav__item main-nav--active">Каталог товаров</a></li>
+          <li><a class="main-nav__item" href="#">Вязание на заказ</a></li>
+          <li><a class="main-nav__item" href="#">Новые поступления</a></li>
+          <li><a class="main-nav__item" href="#">Распродажа</a></li>
+          <li><a class="main-nav__item" href="#">Поиск</a></li>
+          <li><a class="main-nav__item" href="#">Корзина</a></li>
         </ul>
-
-        <div class="main-nav__search">
-          <div class="main-nav__icon"></div>
-          <div class="main-nav__form">
-            <form class="search-form" id="search" action="#" method="post">
-              <input type="text" placeholder="Что ищем?">
-            </form>
-          </div>
-        </div>
-
-        <div class="main-nav__cart">
-          <a class="main-nav__icon" href="#">Пусто</a>
-        </div>
-
       </div>
-
     </nav>
-
-  </header>
-
-  <main class="catalog">
-
-    <div class="catalog__title">
-
+    <div class="page-heading">
       <h2>Каталог товаров</h2>
     </div>
+  </header>
 
-    <section class="catalog__wrapper">
-
-      <div class="catalog__internal">
-
-        <img src="#" alt="Зайчик-попрыгайчик">
-
-        <span class="catalog__internal catalog__internal--title">Зайчик-попрыгайчик</span>
-        <span class="catalog__internal catalog__internal--data">Рост 30см, вес 200г</span>
-        <span class="catalog__internal catalog__internal--value">1 200 руб.</span>
-
-        <a class="catalog__internal catalog__internal--basket" href="#">корзина</a>
-
-      </div>
-
-      <div class="catalog__internal">
-
-        <img src="#" alt="Корзина для белья">
-
-        <span class="catalog__internal catalog__internal--title">Корзина для белья</span>
-        <span class="catalog__internal catalog__internal--data">Диаметр 15 см, высота 10 см</span>
-        <span class="catalog__internal catalog__internal--value">690 руб.</span>
-
-        <a class="catalog__internal catalog__internal--basket" href="#">корзина</a>
-
-      </div>
-
-      <div class="catalog__internal">
-
-        <img src="#" alt="Большая корзина для игрушек">
-
-        <span class="catalog__internal catalog__internal--title">Большая корзина для игрушек</span>
-        <span class="catalog__internal catalog__internal--data">диаметр 30 см, высота 30 см</span>
-        <span class="catalog__internal catalog__internal--value">1 500 руб.</span>
-
-        <a class="catalog__internal catalog__internal--basket" href="#">корзина</a>
-
-      </div>
-
+  <main>
+    <section class="catalog">
+      <article class="catalog__product">
+        <div class="catalog__product--img">
+          <img src="#" alt="Зайчик-попрыгайчик">
+        </div>
+        <div class="catalog__about">
+          <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+          <p class="catalog__text">Рост 30см, вес 200г</p>
+        </div>
+        <div class="catalog__buy">
+          <span class="catalog__price">1 200 руб.</span>
+          <span class="catalog__icon"></span>
+        </div>
+      </article>
+      <article class="catalog__product">
+        <div class="catalog__product--img">
+          <img src="#" alt="Корзина для белья">
+        </div>
+        <div class="catalog__about">
+          <h3 class="catalog__title">Корзина для белья</h3>
+          <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+        </div>
+        <div class="catalog__buy">
+          <span class="catalog__price">690 руб.</span>
+          <span class="catalog__icon"></span>
+        </div>
+      </article>
+      <article class="catalog__product">
+        <div class="catalog__product--img">
+          <img src="#" alt="Большая корзина для игрушек">
+        </div>
+        <div class="catalog__about">
+          <h3 class="catalog__title">Большая корзина для игрушек</h3>
+          <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+        </div>
+        <div class="catalog__buy">
+          <span class="catalog__price">1 500 руб.</span>
+          <span class="catalog__icon"></span>
+        </div>
+      </article>
     </section>
-
   </main>
 
-  <section class="video-process">
-
-    <div class="video-process__title">Процесс производства</div>
-
-    <video controls preload="metadata" >
-
-      <source src="#" type="video/mp4">
-      <source src="#" type="video/ogg">
-      <source src="#" type="video/webm">
-
-    </video>
-
-    <b class="video-process__clarification">
+  <section class="video">
+    <h3>Процесс производства</h3>
+      <div class="video__process">
+        <img src="#" alt="Процесс производства">
+      </div>
+    <b class="video__text">
       По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
     </b>
-
-    <a class="video-process__order" href="#">сделать заказ</a>
-
+    <a class="video__btn" href="#">сделать заказ</a>
   </section>
 
   <footer class="page‐footer">
-
-    <div class="page‐footer__wrapper">
-
-      <h3 class="page‐footer__title">контакты</h3>
-
-      <div class="page‐footer__contacts">
-
-        <span class="page‐footer__contacts page‐footer__contacts--mail"> e-mail: </span>
-
-        <span class="page‐footer__contacts page‐footer__contacts--info">info@mimimishkashop.ru</span>
-
-        <span class="page‐footer__contacts page‐footer__contacts--address">адрес:</span>
-
-        <span class="page‐footer__contacts page‐footer__contacts--address-mail">г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101</span>
-
-      </div>
-    </div>
-
-    <!-- Карту не знаю как вставить-->
-
     <p class="page‐footer__social">
-
         <span class="social‐links">
-
           <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
           <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-
         </span>
     </p>
-
     <p class="page‐footer__copyright">
-
       <a class="btn btn‐‐invert page‐footer__copyright‐link" href="#">Разработано</a>
-
     </p>
-
     <img src="#" width="370" height="153" alt="HTML Academy">
-
   </footer>
-
-
 </body>
 </html>
