@@ -31,10 +31,10 @@
 <section class="promo">
   <ul class="promo__list">
     <li class="promo__item">
-      <a class="promo__item-name">Предметы интерьера</a>
+      <a class="promo__link">Предметы интерьера</a>
     </li>
     <li class="promo__item">
-      <a class="promo__item-name">Детские игрушка</a>
+      <a class="promo__link">Детские игрушка</a>
     </li>
   </ul>
 </section>
@@ -43,35 +43,32 @@
     <h2 class="product-week__title">Вязаные корзинки</h2>
     <span class="product-week__text">Товар недели</span>
   </div>
-  <p class="product-week__text-descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+  <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
     размерах.</p>
-  <div class="product-week__wrapper">
-    <div class="table">
-      <table class="product-week__table">
-        <tr>
-          <td>Цвет:</td>
-          <td>«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
-        </tr>
-        <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
-        </tr>
-      </table>
-    </div>
+  <div class="product-week__inner">
+    <table class="table product-week__table">
+      <tr>
+        <td>Цвет:</td>
+        <td>«Тиффани»/серый</td>
+      </tr>
+      <tr>
+        <td>Диаметр:</td>
+        <td>25 см</td>
+      </tr>
+      <tr>
+        <td>Высота:</td>
+        <td>15 см</td>
+      </tr>
+    </table>
   </div>
   <span class="product-week__price">Цена: 990 руб.</span>
-  <p class="page‐header__order">
-    <a class="btn btn‐‐invert page‐header__order‐link" href="#">Заказать</a>
+  <p class="product-week__order">
+    <a class="btn btn‐‐invert product-week__order‐link" href="#">Заказать</a>
   </p>
 </section>
 
 <section class="advantages">
   <h2 class="advantages__title">Коротко о нас:</h2>
-  <div class="advantages__list-wrapper">
     <ul class="advantages__list">
       <li class="advantages__item">
         <span class="advantages__item-descr">Экологически чистые материалы</span>
@@ -92,7 +89,6 @@
         <span class="advantages__item-descr">Поставляется в подарочной упаковке</span>
       </li>
     </ul>
-  </div>
 </section>
 
 <section class="reviews">
@@ -101,7 +97,7 @@
     <div class="reviews__slider‐wrapper slider">
       <div class="reviews__inner slider__inner">
         <blockquote class="reviews__item slider__item">
-          <p class="reviews__item‐descr"> Я молодая мама, но все равно фотографии не набирали и близко такого количества
+          <p class="reviews__text"> Я молодая мама, но все равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
             сразу стали более стильными, а так же набирают больше лайков!</p>
           <cite class="reviews__auhor‐name">Анастасия Красильникова</cite>
@@ -112,20 +108,20 @@
       <button class="reviews__btn reviews__btn--next" type="button">Следующий отзыв</button>
     </div>
   </div>
-  <a class="news__more btn" href="">написать</a>
+  <a class="reviews__btn btn" href="">написать</a>
 </section>
 
 <section class="contacts">
   <div class="contacts__wrapper">
     <h3 class="contacts__title">контакты</h3>
-    <table class="contacts-table table--contacts">
+    <table class="contacts__table table">
       <tr>
-        <td class="contacts__email">e-mail:</td>
-        <td class="contacts__info">info@mimimishkashop.ru</td>
+        <td class="table__col">e-mail:</td>
+        <td class="table__row">info@mimimishkashop.ru</td>
       </tr>
       <tr>
-        <td class="contacts__address">адрес:</td>
-        <td class="contacts__address-mail">г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101</td>
+        <td class="table__col">адрес:</td>
+        <td class="table__row">г.Санкт-Петербург ул.Большая Конюшенная д.19/8, офис 101</td>
       </tr>
     </table>
   </div>
@@ -134,17 +130,17 @@
 </section>
 
 <footer class="page‐footer">
-  <p class="page‐footer__social">
-    <span class="social‐links">
-      <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-      <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-      <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-    </span>
-  </p>
-  <p class="page‐footer__copyright">
-    <a class="link link‐‐invert page‐footer__copyright‐link" href="#">Разработано</a>
-  </p>
-  <a class="link link‐‐invert page‐footer__copyright‐img"><img src="#" width="370" height="153" alt="HTML Academy"></a>
+  <div class="social‐links">
+    <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+    <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+    <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+  </div>
+  <div class="copyright">
+    <p class="copyright__title">
+      <a class="link link‐‐invert copyright__link" href="#">Разработано</a>
+    </p>
+    <a class="link link‐‐invert copyright__img"><img src="#" width="370" height="153" alt="HTML Academy"></a>
+  </div>
 </footer>
 </body>
 </html>
