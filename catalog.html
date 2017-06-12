@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__logo">
-    <a class="page-header__icon  href=#"><img src="#" alt="Мишка"></a>
+    <a class="page-header__icon"  href="index.html"><img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35"></a>
   </div>
   <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню -->
     <button class="main-nav__toggler" type="button" title="Закрыть"></button>
@@ -28,69 +29,77 @@
 <main>
   <section class="catalog">
     <article class="product">
-      <div class="catalog__img">
-        <img src="#" alt="Зайчик-попрыгайчик">
-      </div>
-      <div class="catalog__about">
-        <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
-        <p class="catalog__text">Рост 30см, вес 200г</p>
-      </div>
-      <div class="catalog__buy">
-        <span class="catalog__price">1 200 руб.</span>
-        <span class="catalog__icon"></span>
-      </div>
-    </article>
-    <article class="product">
-      <div class="catalog__img">
-        <img src="#" alt="Корзина для белья">
-      </div>
-      <div class="catalog__about">
-        <h3 class="catalog__title">Корзина для белья</h3>
-        <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-      </div>
-      <div class="catalog__buy">
-        <span class="catalog__price">690 руб.</span>
-        <span class="catalog__icon"></span>
+      <div class="product__wrapper">
+        <div class="catalog__img">
+          <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="196">
+        </div>
+        <div class="catalog__about">
+          <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+          <p class="catalog__text">Рост 30см, вес 200г</p>
+        </div>
+        <div class="catalog__buy">
+          <span class="catalog__price">1 200 руб.</span>
+          <span class="catalog__icon"></span>
+        </div>
       </div>
     </article>
     <article class="product">
-      <div class="catalog__img">
-        <img src="#" alt="Большая корзина для игрушек">
+      <div class="product__wrapper">
+        <div class="catalog__img">
+          <img src="img/photo-2-mobile@1x.jpg" alt="Корзина для белья" width="260" height="196">
+        </div>
+        <div class="catalog__about">
+          <h3 class="catalog__title">Корзина для белья</h3>
+          <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+        </div>
+        <div class="catalog__buy">
+          <span class="catalog__price">690 руб.</span>
+          <span class="catalog__icon"></span>
+        </div>
       </div>
-      <div class="catalog__about">
-        <h3 class="catalog__title">Большая корзина для игрушек</h3>
-        <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
-      </div>
-      <div class="catalog__buy">
-        <span class="catalog__price">1 500 руб.</span>
-        <span class="catalog__icon"></span>
+    </article>
+    <article class="product">
+      <div class="product__wrapper">
+        <div class="catalog__img">
+          <img src="img/photo-3-mobile@1x.jpg" alt="Большая корзина для игрушек" width="260" height="196">
+        </div>
+        <div class="catalog__about">
+          <h3 class="catalog__title">Большая корзина для игрушек</h3>
+          <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+        </div>
+        <div class="catalog__buy">
+          <span class="catalog__price">1 500 руб.</span>
+          <span class="catalog__icon"></span>
+        </div>
       </div>
     </article>
   </section>
 </main>
 
 <section class="video">
-  <h3 class="video__title">Процесс производства</h3>
-  <div class="video__process">
-    <img src="#" alt="Процесс производства">
+  <div class="video__wrapper">
+    <h3 class="video__title">Процесс производства</h3>
+    <div class="video__process">
+      <img src="img/video-mobile@1x.jpg" alt="Процесс производства">
+    </div>
+    <b class="video__text">
+      По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+    </b>
+    <a class="video__btn" href="form.html">сделать заказ</a>
   </div>
-  <b class="video__text">
-    По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-  </b>
-  <a class="video__btn" href="#">сделать заказ</a>
 </section>
 
 <footer class="page‐footer">
   <div class="social‐links">
-    <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-    <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-    <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+    <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy" title="Мы в Инстаграме"></a>
+    <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy" title="Мы в Фейсбуке"></a>
+    <a class="social‐link social‐link‐‐tw" href="https://twitter.com/htmlacademy" title="Мы в Твиттере"></a>
   </div>
   <div class="copyright">
     <p class="copyright__title">
       <a class="link link‐‐invert copyright__link" href="#">Разработано</a>
     </p>
-    <a class="link link‐‐invert copyright__img"><img src="#" width="370" height="153" alt="HTML Academy"></a>
+    <a class="link link‐‐invert copyright__img"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
   </div>
 </footer>
 </body>
