@@ -1,10 +1,10 @@
-.page-heading{
-  font-weight: @main-font-weight;
+.page-heading {
+  font-weight: 700;
   font-size: 27px;
   line-height: 1.11;
   padding: 71px 0 76px;
   margin-bottom: 28px;
-  background: @main-background;
+  background: #f1f1f1;
   text-align: center;
   margin-top: 0;
   background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center -17px no-repeat;

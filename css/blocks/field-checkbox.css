@@ -1,18 +1,16 @@
 .field-checkbox {
-  width: 320px;
+  width: 328px;
   padding-left: 30px;
   padding-right: 30px;
   margin: auto;
 }
-
 .field-checkbox__title {
-  background: @main-background-white;
+  background: #ffffff;
   display: inline-block;
   vertical-align: top;
   width: 65px;
   margin-bottom: 28px;
 }
-
 .field-checkbox__item {
   display: block;
   font-weight: 700;
