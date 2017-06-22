@@ -1,1 +1,40 @@
-
+.main-nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: #e7e7e7;
+  width: 100%;
+}
+.main-nav__wrapper {
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+@media @tablet-widths {
+  .main-nav__wrapper {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+.main-nav__toggler{
+  position: absolute;
+  top: 31px;
+  right: 29px;
+  font-size: 0;
+  height: 20px;
+  width: 21px;
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.main-nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

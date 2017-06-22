@@ -5,8 +5,72 @@
   padding-bottom: 0;
 }
 .video__wrapper {
+  position: relative;
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
+  border: 1px solid #ececec;
   width: 260px;
+}
+
+.video__process {
+  position: absolute;
+  top: 96px;
+  left: 0;
+}
+
+.btn--video-play {
+  position: absolute;
+  width: 102px;
+  height: 78px;
+  background: url(../img/icon-play.svg) 0 0 no-repeat;
+  top: 39px;
+  left: 80px;
+  border: none;
+  transition: all 1s;
+}
+
+.video__title{
+  padding-bottom: 189px;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 700;
+  display: flex;
+  margin-top: 23px;
+}
+
+.video__title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 27px;
+  background: url(../img/icon-video.svg) 0 0 no-repeat;
+  margin-left: 34px;
+  margin-right: 19px;
+  box-sizing: content-box;
+  margin-top: 7px;
+}
+
+.video__text {
+  font-size: 13px;
+  line-height: 1.85;
+  padding-left: 34px;
+  padding-right: 41px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.video__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 192px;
+  margin: 0 auto 33px;
+}
+
+.video__wrapper:active {
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+}
+
+.video__wrapper:hover {
+  box-shadow: 0 6px 10px rgba(0,0,0,.1);
 }

@@ -1,11 +1,52 @@
 .page-heading{
-  font-weight: @main-font-weight;
-  font-size: 27px;
-  line-height: 1.11;
-  padding: 71px 0 76px;
-  margin-bottom: 28px;
-  background: @main-background;
-  text-align: center;
-  margin-top: 0;
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") center -17px no-repeat;
+  background: #f9f9f9;
+  width: 100%;
 }
+
+.page-heading__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #f9f9f9;
+}
+@media @tablet-widths {
+  .page-heading__wrapper {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.page-title {
+  background: #f9f9f9 url(../img/hero-mobile@1x.jpg) center -17px no-repeat;
+  color: #000;
+  line-height: 1.11;
+  font-weight: 700;
+  padding: 70px 8px 125px;
+  margin: 0;
+  text-align: center;
+  background-size: 575px auto;
+}
+
+@media @tablet-widths {
+  .page-title {
+    font-size: 43px;
+    line-height: 1.16;
+    padding-top: 67px;
+    padding-bottom: 376px;
+    background-size: 170%;
+    background-position: center -82px;
+  }
+}
+
+@media @tablet-widths {
+  .page-heading__text {
+    font: 15px/1.6 "Open Sans",Arial,sans-serif;
+    color: #444;
+    position: relative;
+    top: -45px;
+    left: 438px;
+  }
+}
+
