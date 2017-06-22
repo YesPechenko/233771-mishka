@@ -1,6 +1,127 @@
 .product-week {
+  padding-bottom: 33px;
+}
+@media @tablet-widths {
+  .product-week {
+    padding-bottom: 45px;
+  }
+}
+.product-week__wrapper {
   width: 320px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
+}
+@media @tablet-widths {
+  .product-week__wrapper {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.product-week__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+@media @tablet-widths{
+  .product-week__title {
+    font-size: 43px;
+    line-height: 1.16;
+    width: 554px;
+    margin-left: -3px;
+    margin-bottom: 32px;
+  }
+}
+.product-week__text {
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: .94;
+  margin-bottom: 26px;
+  display: block;
+}
+@media @tablet-widths {
+  .product-week__text {
+    max-width: 108px;
+    display: block;
+    margin-top: 41px;
+    text-align: center;
+  }
+}
+@media @tablet-widths {
+ .product-week__inner {
+   position: relative;
+   width: 100%;
+ }
+}
+.product-week__descr {
+  color: #444;
+  margin-bottom: 18px;
+}
+@media @tablet-widths {
+  .product-week__descr {
+    font-size: 17px;
+    line-height: 1.76;
+    margin-bottom: 37px;
+    width: 290px;
+  }
+}
+.product-week__table {
+  width: 100%;
+  margin-bottom: 26px;
+  color: #444;
+}
+@media @tablet-widths {
+  .product-week__table {
+    margin-bottom: 53px;
+    width: 290px;
+  }
+}
+
+.product-week__col-1,
+.product-week__col-2 {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+
+.product-week__col-1 {
+  width: 92px;
+}
+
+.btn,
+.product-week__price {
+  display: block;
+  color: #444;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 0 auto;
+}
+@media @tablet-widths {
+  .product-week__price {
+    font-size: 20px;
+    line-height: 1.2;
+    display: block;
+    margin: 0 0 8px 20px;
+  }
+}
+.product-week__price {
+  line-height: 1.41;
+  width: 255px;
+  padding-bottom: 27px;
+}
+.btn‐‐invert {
+  margin-bottom: 35px;
+}
+@media @tablet-widths {
+  .btn‐‐invert {
+    width: 291px;
+    margin: 0 0 59px;
+  }
 }

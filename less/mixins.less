@@ -1,19 +1,51 @@
-.img {
-  border-style: none;
-  max-width: 100%;
-  height: auto;
-}
 .field-radio__title,
 .field-checkbox__title,
 .field-text__title {
   color:@field-color;
 }
+
 button,
 input{
   margin: 0;
 }
+
 a,
 button,
 input {
   font: 15px/1.6 "opensans", Arial, sans-serif;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 780px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+}
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
 }
