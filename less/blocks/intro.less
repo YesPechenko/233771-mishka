@@ -1,4 +1,4 @@
-.intro {
+.intro__text {
   font-size: 13px;
   line-height: 1.85;
   color: #444;
@@ -7,3 +7,24 @@
   padding-right: 30px;
   margin: 0 auto 20px;
 }
+@media @tablet-widths {
+  .intro__text {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 17px;
+    line-height: 1.76;
+    position: relative;
+    top: -44px;
+    margin-bottom: 36px;
+  }
+}
+@media @desktop-widths {
+  .intro__text {
+    width: 1150px;
+    top: -69px;
+    padding-right: 225px;
+    padding-left: 225px;
+  }
+}
+

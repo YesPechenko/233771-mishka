@@ -7,38 +7,60 @@
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav">
-    <div class="main-nav main-nav--open">
+  <div class="page-header__wrapper">
+    <nav class="main-nav main-nav--js">
       <div class="main-nav__wrapper">
-        <div class="page-header__logo">
-          <a class="page-header__icon"  href="index.html"><img src="img/logo-mobile.svg" alt="Мишка" width="86" height="35"></a>
-          <button class="main-nav__toggler" type="button" title="Переключатель"></button>
-        </div><!--
-        <ul class="main-nav__list">
+        <div class="main-nav__logo">
+          <a class="logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__icon" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Mishka">
+            </picture>
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button" title="Переключатель">Открыть меню</button>
+        <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav--active" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html" title="Перейти в каталог товаров">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Вязание на заказ</a>
+            <a class="main-nav__link" title="Заказать вязание">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новые поступления</a>
+        </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-item  main-nav__user-item--search">
+            <a class="main-nav__link  main-nav__link--hidden" href="#"
+               title="Вы можете найти нужный вам товар в поиске">
+              <svg class="icon-state  icon-state--search" width="20" height="20">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-search"></use>
+              </svg>
+              Поиск по сайту
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Распродажа</a>
+          <li class="main-nav__user-item  main-nav__user-item--cart">
+            <a class="main-nav__link  main-nav__link-cart" href="#" title="Заказать вязание">
+              <svg class="icon-state  icon-state--cart" width="20" height="20">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#icon-cart"></use>
+              </svg>
+              Корзина: <span class="main-nav__value-cart">пока пуста</span>
+            </a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Поиск</a>
+        </ul>
+        <ul class="main-nav__attracting">
+          <li class="main-nav__attracting-item">
+            <a class="main-nav__link" href="#" title="Узнать о новых поступлениях">Новые поступления</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Корзина</a>
+          <li class="main-nav__attracting-item">
+            <a class="main-nav__link" href="#" title="Узнать о распродажах">Распродажа</a>
           </li>
-        </ul> -->
+          <li class="main-nav__delivery">Бесплатная доставка по России</li>
+        </ul>
       </div>
-    </div>
-  </nav>
-  <div class="page-header__inner">
-    <h1 class="header-title">Вязание на заказ</h1>
+    </nav>
+  </div>
+  <div class="header__inner header__inner--title">
+    <h1 class="header__inner-text">Вязание на заказ</h1>
   </div>
 </header>
 
@@ -52,95 +74,101 @@
     <div class="order__wrapper">
       <form class="form" action="search" method="post">
         <div class="field-radio">
-          <div class="field-radio__title">
-            <h3 class="field-radio__title-text">Тип</h3>
-          </div>
-          <div class="field-radio__items">
-            <input class="field-radio__input" name="question-one" type="radio" id="accessory" value="Аксесуар для интерьера">
-            <label class="field-radio__item" for="accessory">
-              <span class="field-radio__text">Аксесуар для интерьера</span>
-            </label>
-            <input class="field-radio__input" name="question-one" type="radio" id="toy" value="Детская игрушка">
-            <label class="field-radio__item" for="toy">
-              <span class="field-radio__text">Детская игрушка</span>
-            </label>
+          <div class="field-radio field-radio--type">
+            <div class="field-radio__title">
+              <h3 class="field-radio__title-text">Тип</h3>
+            </div>
+            <div class="field-radio__items">
+              <input class="field-radio__input" name="question-one" type="radio" id="accessory" value="Аксесуар для интерьера">
+              <label class="field-radio__item" for="accessory">
+                <span class="field-radio__text">Аксесуар для интерьера</span>
+              </label>
+              <input class="field-radio__input" name="question-one" type="radio" id="toy" value="Детская игрушка">
+              <label class="field-radio__item" for="toy">
+                <span class="field-radio__text">Детская игрушка</span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="field-checkbox">
-          <div class="field-checkbox__title field-checkbox__title--color">
-            <h3 class="field-checkbox__title-text">Цвет</h3>
-          </div>
-          <div class="field-checkbox__items">
-            <input class="field-checkbox__input" id="white" name="filler" type="checkbox" value="Белый">
-            <label class="field-checkbox__item" for="white">
-              <span class="field-checkbox__text">Белый</span>
-            </label>
-            <input class="field-checkbox__input" id="gray" name="filler" type="checkbox" value="Серый">
-            <label class="field-checkbox__item" for="gray">
-              <span class="field-checkbox__text">Серый</span>
-            </label>
-            <input class="field-checkbox__input" id="tiffany" name="filler" type="checkbox" value="Тиффани">
-            <label class="field-checkbox__item" for="tiffany">
-              <span class="field-checkbox__text">«Тиффани»</span>
-            </label>
-            <input class="field-checkbox__input" id="black" name="filler" type="checkbox" value="Черный">
-            <label class="field-checkbox__item" for="black">
-              <span class="field-checkbox__text">Черный</span>
-            </label>
-            <input class="field-checkbox__input" id="pink" name="filler" type="checkbox" value="Розовый">
-            <label class="field-checkbox__item" for="pink">
-              <span class="field-checkbox__text">Розовый</span>
-            </label>
-            <input class="field-checkbox__input" id="orange" name="filler" type="checkbox" value="Оранжевый">
-            <label class="field-checkbox__item" for="orange">
-              <span class="field-checkbox__text">Оранжевый</span>
-            </label>
+          <div class="field-checkbox__wrapper">
+            <div class="field-checkbox__title field-checkbox__title--color">
+              <h3 class="field-checkbox__title-text">Цвет</h3>
+            </div>
+            <div class="field-checkbox__items">
+              <input class="field-checkbox__input" id="white" name="filler" type="checkbox" value="Белый">
+              <label class="field-checkbox__item" for="white">
+                <span class="field-checkbox__text">Белый</span>
+              </label>
+              <input class="field-checkbox__input" id="gray" name="filler" type="checkbox" value="Серый">
+              <label class="field-checkbox__item" for="gray">
+                <span class="field-checkbox__text">Серый</span>
+              </label>
+              <input class="field-checkbox__input" id="tiffany" name="filler" type="checkbox" value="Тиффани">
+              <label class="field-checkbox__item" for="tiffany">
+                <span class="field-checkbox__text">«Тиффани»</span>
+              </label>
+              <input class="field-checkbox__input" id="black" name="filler" type="checkbox" value="Черный">
+              <label class="field-checkbox__item" for="black">
+                <span class="field-checkbox__text">Черный</span>
+              </label>
+              <input class="field-checkbox__input" id="pink" name="filler" type="checkbox" value="Розовый">
+              <label class="field-checkbox__item" for="pink">
+                <span class="field-checkbox__text">Розовый</span>
+              </label>
+              <input class="field-checkbox__input" id="orange" name="filler" type="checkbox" value="Оранжевый">
+              <label class="field-checkbox__item" for="orange">
+                <span class="field-checkbox__text">Оранжевый</span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="field-text">
-          <div class="field-text__title-inner">
-          <h3 class="field-text__title">ФИО</h3>
-          </div>
-          <div class="field-text__items">
-            <label class="field-text__item" for="name">
-              <span class="field-text__text">Имя:</span>
-            </label>
-            <input class="field-text__input" type="text" id="name" tabindex="1" placeholder="Введите ваше имя*" required>
-            <label class="field-text__item" for="surname">
-              <span class="field-text__text">Фамилия:</span>
-            </label>
-            <input class="field-text__input" type="text" id="surname" tabindex="2" placeholder="Укажите фамилию*" required>
-            <label class="field-text__item" for="patronymic">
-              <span class="field-text__text">Отчество:</span>
-            </label>
-            <input class="field-text__input" type="text" id="patronymic" tabindex="3" placeholder="Отчество, если желаете" required>
-          </div>
-        </div>
-        <div class="field-text">
-          <div class="field-text__inner">
-            <div class="field-text__title-inner">
-              <h3 class="field-text__title">Тел</h3>
+          <div class="field-text__wrapper">
+            <div class="field-text__title-inner field-text__title-inner--name">
+            <h3 class="field-text__title">ФИО</h3>
             </div>
             <div class="field-text__items">
-              <label class="field-text__item" for="tel"></label>
-                <input class="field-text__input" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" tabindex="4" placeholder="+7 ХХХ ХХ ХХ*" required>
-              </div>
-          </div>
-          <div class="field-text__inner">
-            <div class="field-text__title-inner">
-              <h3 class="field-text__title">E-Mail</h3>
-            </div>
-            <div class="field-text__items">
-              <label class="field-text__item" for="email"></label>
-                <input class="field-text__input" type="email" id="email" tabindex="5" placeholder="Ваш Email*" required>
+              <label class="field-text__item field-text__item--name" for="name">
+                <span class="field-text__text">Имя:</span>
+              </label>
+              <input class="field-text__input" type="text" id="name" tabindex="1" placeholder="Введите ваше имя*" required>
+              <label class="field-text__item field-text__item--surname" for="surname">
+                <span class="field-text__text">Фамилия:</span>
+              </label>
+              <input class="field-text__input" type="text" id="surname" tabindex="2" placeholder="Укажите фамилию*" required>
+              <label class="field-text__item field-text__item--patronymic" for="patronymic">
+                <span class="field-text__text">Отчество:</span>
+              </label>
+              <input class="field-text__input" type="text" id="patronymic" tabindex="3" placeholder="Отчество, если желаете" required>
               </div>
           </div>
         </div>
-        <div class="field-text">
-          <div class="field-text__title-inner">
-            <h3 class="field-text__title">Доп</h3>
+        <div class="field-text field-text--tel-email">
+          <div class="field-text__wrapper field-text__wrapper--tel">
+            <div class="field-text__inner">
+              <h3 class="field-text__title field-text__title--tel">
+                <label class="field-text__item" for="tel">Тел</label>
+              </h3>
+              <input class="field-text__input field-text__input--tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" tabindex="4" placeholder="+7 ХХХ ХХ ХХ*" required>
+            </div>
           </div>
-          <textarea class="field-text__extra" name="extra" id="wishes" tabindex="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="field-text__wrapper field-text__wrapper--email">
+            <div class="field-text__inner">
+              <h3 class="field-text__title field-text__title--email">
+                <label class="field-text__item" for="email">E-Mail</label>
+              </h3>
+              <input class="field-text__input field-text__input--email" type="email" id="email" tabindex="5" placeholder="Ваш Email*" required>
+            </div>
+          </div>
+        </div>
+        <div class="field-text field-text__wrapper-extra">
+          <div class="field-text__inner-extra">
+            <div class="field-text__title-inner">
+              <h3 class="field-text__title"><label class="field-text__title-label field-text__title-label--extra" for="field-extra">Доп</label></h3>
+            </div>
+            <textarea class="field-text__extra" name="extra" id="field-extra" tabindex="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </div>
         <div class="order__required-inner">
           <span class="order__required">*Поля обязательны для заполнения</span>
